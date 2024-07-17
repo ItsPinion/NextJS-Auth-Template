@@ -1,6 +1,4 @@
-import { type Metadata } from "next";
 import Link from "next/link";
-import { env } from "@/env.js";
 
 import {
   Card,

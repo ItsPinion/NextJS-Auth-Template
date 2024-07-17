@@ -1,6 +1,3 @@
-import { type Metadata } from "next"
-import { env } from "@/env.js"
-
 import {
   Card,
   CardContent,

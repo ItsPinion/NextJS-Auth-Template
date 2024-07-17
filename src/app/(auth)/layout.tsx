@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function AuthLayout({ children }: React.PropsWithChildren) {
   return (
     <div className="relative grid min-h-screen grid-cols-1 overflow-hidden lg:grid-cols-2">
