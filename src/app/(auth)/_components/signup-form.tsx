@@ -38,6 +38,7 @@ export function SignUpForm() {
       lastName: "",
       email: "",
       password: "",
+      confirmPassword: "",
       referralCode: "",
     },
   });
@@ -118,7 +119,7 @@ export function SignUpForm() {
           )}
         />
 
-        <div className="flex flex-row gap-x-4">
+        <div className="flex flex-col gap-4 lg:flex-row">
           <FormField
             control={form.control}
             name="password"
