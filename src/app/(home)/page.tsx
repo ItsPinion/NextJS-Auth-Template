@@ -1,65 +1,17 @@
+import { LatestArticles } from "./_component/latest-articles";
+import { LatestNews } from "./_component/latest-news";
+import { MarketingSection } from "./_component/marketing";
+
 export default function Home() {
-  return <div>
+  return (
+    <div>
+      <LatestNews />
 
-    <h1>Home</h1>
+     <MarketingSection/>
 
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-    <p>This is the home page.</p>
-  </div>;
-  
-
+     <LatestArticles/>
+    </div>
+  );
 }
+
+
