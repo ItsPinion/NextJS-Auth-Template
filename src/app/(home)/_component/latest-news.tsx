@@ -36,52 +36,63 @@ export function LatestNews() {
   return (
     <div className="p-24">
       <h1 className="mb-10 text-center text-4xl font-bold">Latest News</h1>
-      <div className="flex flex-row items-start justify-center gap-12">
-        {mainArticle && (
-          <div className="flex min-w-[65%] flex-col items-start justify-center gap-5">
+      <Body mainArticle={mainArticle} sideArticles={sideArticles} />
+    </div>
+  );
+}
+
+function Body({
+  mainArticle,
+  sideArticles,
+}: {
+  mainArticle: Article | undefined;
+  sideArticles: Article[];
+}) {
+  return (
+    <div className="flex flex-row items-start justify-center gap-12">
+      {mainArticle && (
+        <div className="flex min-w-[65%] flex-col items-start justify-center gap-5">
+          <Image
+            src={mainArticle.imageSrc}
+            width={671}
+            height={388}
+            alt={"Latest news"}
+            className="mx-auto w-full rounded-md border-2 border-black"
+          />
+          <h2 className="text-start text-4xl font-bold">{mainArticle.title}</h2>
+          <blockquote className="text-start">
+            {mainArticle.description}
+          </blockquote>
+          <Button
+            variant="expandIcon"
+            Icon={FaArrowRightLong}
+            iconPlacement="right"
+            className="rounded-full p-7 text-xl"
+          >
+            Read More
+          </Button>
+        </div>
+      )}
+
+      <div className="flex min-w-[35%] flex-col items-start justify-center gap-5">
+        {sideArticles.map((article, index) => (
+          <div
+            key={index}
+            className="flex flex-col items-start justify-center gap-3"
+          >
             <Image
-              src={mainArticle.imageSrc}
-              width={671}
-              height={388}
+              src={article.imageSrc}
+              width={460}
+              height={212}
               alt={"Latest news"}
               className="mx-auto w-full rounded-md border-2 border-black"
             />
-            <h2 className="text-start text-4xl font-bold">
-              {mainArticle.title}
-            </h2>
+            <h2 className="text-start text-2xl font-bold">{article.title}</h2>
             <blockquote className="text-start">
-              {mainArticle.description}
+              {article.description}
             </blockquote>
-            <Button
-              variant="expandIcon"
-              Icon={FaArrowRightLong}
-              iconPlacement="right"
-              className="rounded-full p-7 text-xl"
-            >
-              Read More
-            </Button>
           </div>
-        )}
-        <div className="flex min-w-[35%] flex-col items-start justify-center gap-5">
-          {sideArticles.map((article, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-start justify-center gap-3"
-            >
-              <Image
-                src={article.imageSrc}
-                width={460}
-                height={212}
-                alt={"Latest news"}
-                className="mx-auto w-full rounded-md border-2 border-black"
-              />
-              <h2 className="text-start text-2xl font-bold">{article.title}</h2>
-              <blockquote className="text-start">
-                {article.description}
-              </blockquote>
-            </div>
-          ))}
-        </div>
+        ))}
       </div>
     </div>
   );

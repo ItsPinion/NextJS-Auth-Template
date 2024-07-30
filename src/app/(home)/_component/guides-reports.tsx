@@ -25,45 +25,20 @@ const guidesNReports: GuidesNReports[] = [
   },
   {
     catagory: "Marketing",
-    title:
-      "Ultimate Guide to Choosing Tools for Digital Marketing Agencies...",
+    title: "Ultimate Guide to Choosing Tools for Digital Marketing Agencies...",
     description:
       "In the throes of 2024’s digital marketing agency arena, the tremors from OpenAI’s latest conference have sent a…",
     imageSrc: "/placeholder.svg",
   },
 ];
 export function GuidesNReports() {
-  
-
   return (
-    <div className="p-24 flex flex-col items-center justify-center bg-[#EFEBEB]">
+    <div className="flex flex-col items-center justify-center bg-[#EFEBEB] p-24">
       <Header />
+      
+      <Body />
 
-      <div className="mt-10 grid grid-cols-1 items-center justify-between gap-4 md:grid-cols-1 lg:grid-cols-3">
-        {guidesNReports.map((article, index) => (
-          <div
-            key={index}
-            className="flex h-[462px] w-auto flex-col items-start rounded-lg border bg-white shadow-md"
-          >
-            <Image
-              src={""}
-              width={460}
-              height={212}
-              alt={"Latest news"}
-              className="w-full border-2 border-black"
-            />
-            <div className="flex flex-col items-start justify-between gap-4 p-4">
-              <Badge>{article.catagory}</Badge>
-              <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-                {article.title}
-              </h4>
-              <p>{article.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <Button variant={"linkHover1"} className="mt-10 text-primary ">
+      <Button variant={"linkHover1"} className="mt-10 text-primary">
         See All Articles
       </Button>
     </div>
@@ -72,12 +47,39 @@ export function GuidesNReports() {
 
 function Header() {
   return (
-    <div className="flex flex-row items-center justify-between w-full">
+    <div className="flex w-full flex-row items-center justify-between">
       <h1 className="text-center text-4xl font-bold">Guides & Reports</h1>
-
       <Button variant={"linkHover1"} className="text-primary">
         See All
       </Button>
+    </div>
+  );
+}
+
+function Body() {
+  return (
+    <div className="mt-10 grid grid-cols-1 items-center justify-between gap-4 md:grid-cols-1 lg:grid-cols-3">
+      {guidesNReports.map((article, index) => (
+        <div
+          key={index}
+          className="flex h-[462px] w-auto flex-col items-start rounded-lg border bg-white shadow-md"
+        >
+          <Image
+            src={""}
+            width={460}
+            height={212}
+            alt={"Latest news"}
+            className="w-full rounded-t-lg border-2 border-black"
+          />
+          <div className="flex flex-col items-start justify-between gap-4 p-4">
+            <Badge>{article.catagory}</Badge>
+            <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
+              {article.title}
+            </h4>
+            <p>{article.description}</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

@@ -59,7 +59,7 @@ function Body() {
             width={400}
             height={400}
             alt={"Latest news"}
-            className="w-[25%] h-[25%] border-2 border-black"
+            className="w-[25%] h-[25%] border-2 border-black rounded-l-lg"
           />
 
 
