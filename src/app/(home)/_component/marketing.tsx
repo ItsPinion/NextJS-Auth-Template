@@ -27,15 +27,22 @@ const demoData: Section[] = [
 ];
 export function MarketingSection() {
   return (
-    <div className="bg-[#EFEBEB] p-24">
+    <div className="flex flex-col gap-5 bg-[#EFEBEB] px-4 py-10 lg:p-24">
       {demoData.map((section, index) => (
         <div
           key={index}
-          className="mb-12 flex flex-row items-center justify-between rounded-lg"
+          className="flex flex-col items-center justify-between rounded-lg lg:flex-row"
         >
           {index % 2 ? (
             <>
-              <div className="flex w-[50%] flex-col items-start justify-center gap-5">
+              <Image
+                src={section.imageSrc}
+                width={553}
+                height={462}
+                alt={section.section}
+                className="block rounded-md border-2 border-black lg:hidden lg:w-[35%]"
+              />
+              <div className="flex flex-col items-start justify-center gap-5 lg:w-[50%]">
                 <h2 className="text-start text-4xl font-bold">
                   {section.title}
                 </h2>
@@ -46,7 +53,7 @@ export function MarketingSection() {
                   variant="expandIcon"
                   Icon={FaArrowRightLong}
                   iconPlacement="right"
-                  className="rounded-full"
+                  className="mx-auto my-5 flex scale-150 rounded-full lg:m-0 lg:scale-100 "
                 >
                   View {section.section}
                 </Button>
@@ -56,7 +63,7 @@ export function MarketingSection() {
                 width={553}
                 height={462}
                 alt={section.section}
-                className="w-[35%] rounded-md border-2 border-black"
+                className="hidden w-[35%] rounded-md border-2 border-black lg:block"
               />
             </>
           ) : (
@@ -66,9 +73,9 @@ export function MarketingSection() {
                 width={553}
                 height={462}
                 alt={section.section}
-                className="w-[35%] rounded-md border-2 border-black"
+                className="rounded-md border-2 border-black lg:w-[35%]"
               />
-              <div className="flex w-[50%] flex-col items-start justify-center gap-5">
+              <div className="flex flex-col items-start justify-center gap-5 lg:w-[50%]">
                 <h2 className="text-start text-4xl font-bold">
                   {section.title}
                 </h2>
@@ -79,7 +86,7 @@ export function MarketingSection() {
                   variant="expandIcon"
                   Icon={FaArrowRightLong}
                   iconPlacement="right"
-                  className="rounded-full"
+                  className="mx-auto my-5 flex scale-150 rounded-full lg:m-0 lg:scale-100 "
                 >
                   View {section.section}
                 </Button>

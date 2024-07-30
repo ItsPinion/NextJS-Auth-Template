@@ -44,7 +44,7 @@ function FooterLink({ href, children }: { href: string; children: string }) {
 
 function FooterSection({ title, links }: FooterSectionProps) {
   return (
-    <div className="grid gap-2">
+    <div className="grid max-gap-2">
       <h4 className="pb-2 text-lg font-semibold text-white">{title}</h4>
       {links.map((link, index) => (
         <FooterLink key={index} href={link.href}>
@@ -181,7 +181,7 @@ export function Footer() {
 
   return (
     <footer className="w-full bg-[#02021E] py-8 md:py-12 px-20">
-      <div className="flex flex-row items-start justify-between">
+      <div className="flex lg:flex-row flex-col items-start justify-between">
         <div className="flex flex-col items-start gap-4">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <Logo textColor="white" />

@@ -56,7 +56,7 @@ const articles: Article[] = [
 
 export function LatestArticles() {
   return (
-    <div className="flex flex-col items-center justify-center p-24">
+    <div className="flex flex-col items-center justify-center lg:p-24 px-4 py-10">
       <Header />
 
       <Body />

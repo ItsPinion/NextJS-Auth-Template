@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 export function TopAgencies() {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-10 p-24">
+    <div className="hidden flex-col items-center justify-center gap-y-10 p-24 lg:flex">
       <h1 className="text-center text-4xl font-bold">Top Agencies</h1>
       <Body />
       <Button variant={"linkHover1"} className="w-fit text-primary">

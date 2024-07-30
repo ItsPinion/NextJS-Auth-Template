@@ -33,9 +33,9 @@ const guidesNReports: GuidesNReports[] = [
 ];
 export function GuidesNReports() {
   return (
-    <div className="flex flex-col items-center justify-center bg-[#EFEBEB] p-24">
+    <div className="flex flex-col items-center justify-center bg-[#EFEBEB] p-4 lg:p-24">
       <Header />
-      
+
       <Body />
 
       <Button variant={"linkHover1"} className="mt-10 text-primary">

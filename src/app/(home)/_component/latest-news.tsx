@@ -34,9 +34,17 @@ export function LatestNews() {
   const sideArticles = demoData.slice(1);
 
   return (
-    <div className="p-24">
+    <div className="lg:p-24 px-4 relative top-[-100px]">
       <h1 className="mb-10 text-center text-4xl font-bold">Latest News</h1>
       <Body mainArticle={mainArticle} sideArticles={sideArticles} />
+      <Button
+            variant="expandIcon"
+            Icon={FaArrowRightLong}
+            iconPlacement="right"
+            className="rounded-full p-7 text-xl lg:hidden flex items-center justify-center mt-10 mx-auto "
+          >
+            Read More
+          </Button>
     </div>
   );
 }
@@ -49,7 +57,7 @@ function Body({
   sideArticles: Article[];
 }) {
   return (
-    <div className="flex flex-row items-start justify-center gap-12">
+    <div className="flex flex-col lg:flex-row items-start justify-center gap-12">
       {mainArticle && (
         <div className="flex min-w-[65%] flex-col items-start justify-center gap-5">
           <Image
@@ -67,7 +75,7 @@ function Body({
             variant="expandIcon"
             Icon={FaArrowRightLong}
             iconPlacement="right"
-            className="rounded-full p-7 text-xl"
+            className="rounded-full p-7 text-xl hidden lg:block"
           >
             Read More
           </Button>

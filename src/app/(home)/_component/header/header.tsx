@@ -66,7 +66,7 @@ export function Header() {
           <Logo className="scale-90" textColor="white" />
           <HomeNav />
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="hidden items-center space-x-4 lg:flex">
           <Button className="rounded-md bg-pink-600 px-4 py-2 text-white">
             Benchmark Report 2024
           </Button>
