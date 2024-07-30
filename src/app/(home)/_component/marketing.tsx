@@ -31,7 +31,7 @@ export function MarketingSection() {
       {demoData.map((section, index) => (
         <div
           key={index}
-          className="mb-12 flex flex-row items-center justify-between"
+          className="mb-12 flex flex-row items-center justify-between bg-white rounded-lg"
         >
           {index % 2 ? (
             <>

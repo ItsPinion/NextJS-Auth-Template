@@ -54,7 +54,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
             height={70}
             alt={`Thumbnail ${index + 1}`}
             className={cn(
-              "h-16 w-16 cursor-pointer rounded-md object-cover",
+              "h-16 w-16 cursor-pointer rounded-md object-cover trabsform-all duration-500",
               currentIndex === index ? "scale-150 border-2 border-pink-600" : ""
             )}
             onClick={() => setCurrentIndex(index)}
