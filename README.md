@@ -35,18 +35,14 @@ A state-of-the-art authentication solution for any NextJS platforms, offering a 
 
 <h3 align="center">SignIn Screen</h3>
 
-<a href="https://itspinion-auth.vercel.app/" align="center" style="display: flex; justify-content: center; flex-direction: row; align-items: center; gap: 10px; height: 300px;
-height: 300px;">
+<a href="https://itspinion-auth.vercel.app/" >
 <img src="./public/signin-pc.png" alt="Login Screen pc" style="border-radius: 10px;">
-<img src="./public/signin-mb.png" alt="Login Screen mobile" style="border-radius: 10px; ">
 </a>
 
 <h3 align="center">SignUp Screen</h3>
 
-<a href="https://itspinion-auth.vercel.app/" align="center" style="display: flex; justify-content: center; flex-direction: row; align-items: center; gap: 10px; height: 300px;
-height: 300px;">
+<a href="https://itspinion-auth.vercel.app/" >
 <img src="./public/signup-pc.png" alt="Login Screen pc" style="border-radius: 10px;">
-<img src="./public/signup-mb.png" alt="Login Screen mobile" style="border-radius: 10px; ">
 </a>
 
 </div>
