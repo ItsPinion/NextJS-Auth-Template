@@ -9,7 +9,7 @@ import { toast } from "sonner"
 import type { z } from "zod"
 
 import { showErrorToast } from "@/lib/handle-error"
-import { checkEmailSchema } from "@/lib/validations/auth"
+import { checkEmailSchema } from "@/lib/auth"
 import { Button } from "@/components/ui/button"
 import {
   Form,

@@ -2,7 +2,7 @@ import { isClerkAPIResponseError } from "@clerk/nextjs/errors"
 import { toast } from "sonner"
 import * as z from "zod"
 
-import { unknownError } from "@/lib/constants"
+export const unknownError = "An unknown error occurred. Please try again later."
 
 export function getErrorMessage(err: unknown) {
   if (err instanceof z.ZodError) {

@@ -8,7 +8,7 @@ import { useForm } from "react-hook-form"
 import type { z } from "zod"
 
 import { showErrorToast } from "@/lib/handle-error"
-import { verifyEmailSchema } from "@/lib/validations/auth"
+import { verifyEmailSchema } from "@/lib/auth"
 import { Button } from "@/components/ui/button"
 import {
   Form,
