@@ -1,29 +1,144 @@
-# Create T3 App
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+# Best NextJS Authentication System 🌟
 
-## What's next? How do I make an app with this?
+A state-of-the-art authentication solution for any NextJS platforms, offering a blend of security, usability, and scalability.
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+![Version](https://img.shields.io/badge/version-1.0.0-purple.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Table of Contents
 
-## Learn More
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Usage](#usage)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Features
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- Secure authentication with Clerk
+- Single Sign-On (SSO) support
+- Email verification flow
+- Password reset functionality
+- Responsive design for mobile and desktop
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Screenshots
 
-## How do I deploy this?
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+<div align="center">
+
+<h3 align="center">SignIn Screen</h3>
+
+<a href="https://itspinion-auth.vercel.app/" align="center" style="display: flex; justify-content: center; flex-direction: row; align-items: center; gap: 10px; height: 300px;
+height: 300px;">
+<img src="./public/signin-pc.png" alt="Login Screen pc" style="border-radius: 10px;">
+<img src="./public/signin-mb.png" alt="Login Screen mobile" style="border-radius: 10px; ">
+</a>
+
+<h3 align="center">SignUp Screen</h3>
+
+<a href="https://itspinion-auth.vercel.app/" align="center" style="display: flex; justify-content: center; flex-direction: row; align-items: center; gap: 10px; height: 300px;
+height: 300px;">
+<img src="./public/signup-pc.png" alt="Login Screen pc" style="border-radius: 10px;">
+<img src="./public/signup-mb.png" alt="Login Screen mobile" style="border-radius: 10px; ">
+</a>
+
+</div>
+
+## Installation
+
+### Prerequisites
+
+Ensure you have Node.js installed on your machine.
+
+```bash
+node --version
+npm --version
+```
+
+### Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/ItsPinion/NextJS-Auth-Template.git
+   ```
+
+2. Navigate into the directory:
+
+   ```bash
+   cd NextJS-Auth-Template
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   # or
+   bun install
+   ```
+
+4. Copy `.env.example` to `.env` and fill in the required values.
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   # or
+   bun dev
+   ```
+
+   or
+
+6. Build and start the server:
+
+   ```bash
+   npm run build
+   npm start
+   # or
+   bun run build
+   bun start
+   ```
+
+  
+   
+
+## Environment Variables
+
+- `DATABASE_URL`: Connection string for your database.
+- `CLERK_SECRET_KEY`: Clerk secret key for authentication.
+- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`: Clerk publishable key exposed to the client side.
+
+## Usage
+
+Navigate to `http://localhost:3000` in your web browser and click the sign in button to start the authentication process.
+
+## Deployment
+
+Deployed using Vercel. Continuous deployment is configured via GitHub Actions.
+
+## Contributing
+
+We welcome contributions! Please read our [Contributing Guide](CONTRIBUTING.md) for details on how to submit pull requests to us.
+
+## License
+
+MIT [License](LICENSE.md) © ItsPinion
+
+## Acknowledgments
+
+
+- The [Shadcn UI](https://ui.shadcn.com/) library for providing a modern and clean UI.
+- [Clerk](https://clerk.com/) for handling authentication and user sessions.
+- [Drizzle ORM](https://orm.drizzle.team/) for efficient data management.
+- The open-source community for their contributions and support.
+
+## Contact
+
+For any questions or feedback, please contact the project maintainer(ME) at our discord server [Pinion's Nest](https://discord.gg/XnzQUw3FPR).
