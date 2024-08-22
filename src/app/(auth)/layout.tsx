@@ -1,5 +1,4 @@
 import Logo from "@/components/logo";
-import background from "@/public/background.gif";
 
 export default function AuthLayout({ children }: React.PropsWithChildren) {
   return (
