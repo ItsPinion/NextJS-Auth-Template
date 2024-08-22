@@ -35,42 +35,6 @@ export const metadata: Metadata = {
     "zero trust security", "developer tools", "web app security", "frontend frameworks", "secure code", "best practices for authentication",
     "cloud security", "privacy controls", "next-gen authentication", "web development", "secure APIs"
   ],
-  openGraph: {
-    title: "ItsPinion Auth | Secure Your Digital Identity",
-    description: "Join the future of secure authentication with ItsPinion Auth. Ensuring the highest standards of security for your digital assets.",
-    url: "https://itspinion-auth.vercel.app",
-    siteName: "ItsPinion Auth",
-    images: [
-      {
-        url: "/images/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "ItsPinion Auth - Secure Your Digital Identity",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ItsPinion Auth | Secure Your Digital Identity",
-    description: "Your gateway to secure and seamless authentication. Protecting your digital identity with the power of Next.js and T3 Stack.",
-    images: ["/images/twitter-image.png"],
-    site: "@ItsPinion",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    "max-snippet": "320",
-    "max-image-preview": "large",
-    "max-video-preview": "-1",
-  },
-  alternates: {
-    canonical: "https://itspinion-auth.vercel.app",
-    languages: {
-      "en-US": "https://itspinion-auth.vercel.app/en-US",
-    },
-  },
 };
 
 
